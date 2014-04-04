@@ -7,8 +7,90 @@
     android:paddingTop="@dimen/activity_vertical_margin" >
 
     <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/title" />
+
+    <TextView
+        android:id="@+id/textViewLocation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDateTitle"
+        android:layout_below="@+id/buttonEdit2"
+        android:layout_marginTop="52dp"
+        android:text="@string/location1" />
+
+    <TextView
+        android:id="@+id/textViewLocation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewLocation1"
+        android:layout_below="@+id/textViewLocation1"
+        android:layout_marginTop="82dp"
+        android:text="@string/location2" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reset" />
+
+    <Button
+        android:id="@+id/buttonEdit1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewTitle"
+        android:text="@string/button_edit" />
+
+    <Button
+        android:id="@+id/buttonEdit2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonEdit1"
+        android:text="@string/button_edit" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonEdit1"
+        android:layout_alignBottom="@+id/buttonEdit1"
+        android:layout_toLeftOf="@+id/buttonEdit2"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonEdit2"
+        android:layout_alignBottom="@+id/buttonEdit2"
+        android:layout_alignRight="@+id/textViewTime"
+        android:text="@string/date" />
+
+    <TextView
+        android:id="@+id/textViewDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewDate"
+        android:layout_alignBottom="@+id/textViewDate"
+        android:layout_alignLeft="@+id/textViewTimeTitle"
+        android:text="@string/date_title" />
+
+    <TextView
+        android:id="@+id/textViewTimeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewTime"
+        android:layout_alignBottom="@+id/textViewTime"
+        android:layout_alignLeft="@+id/textViewTitle"
+        android:text="@string/time_title" />
 
 </RelativeLayout>
